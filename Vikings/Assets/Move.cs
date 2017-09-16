@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Move : MonoBehaviour {
 
+	[SerializeField] private int speed;
+	public int speed2;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,19 +17,27 @@ public class Move : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            this.gameObject.transform.Translate(-2, 0, 0);
+			this.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3 (-speed, 0, 0));
+            //this.gameObject.transform.Translate(-2, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            this.gameObject.transform.Translate(0, -2, 0);
+			this.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3 (0, 0, -speed));
+            //this.gameObject.transform.Translate(0, -2, 0);
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            this.gameObject.transform.Translate(2, 0, 0);
+			this.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3 (speed, 0, 0));
+            //this.gameObject.transform.Translate(2, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            this.gameObject.transform.Translate(0, 2, 0);
+			this.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3 (0, 0, speed));
+            //this.gameObject.transform.Translate(0, 2, 0);
         }
+		if (Input.GetKeyDown (KeyCode.Space)) 
+		{
+			this.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3 (0, speed, 0));
+		}
     }
 }

@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikings", "Vikings.csproj", "{E7C17013-CBF9-BA68-87ED-1F446BA0D8DA}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikings", "Assembly-CSharp.csproj", "{592BC38D-E663-F75B-2490-9B2C28C723C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E7C17013-CBF9-BA68-87ED-1F446BA0D8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7C17013-CBF9-BA68-87ED-1F446BA0D8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7C17013-CBF9-BA68-87ED-1F446BA0D8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7C17013-CBF9-BA68-87ED-1F446BA0D8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592BC38D-E663-F75B-2490-9B2C28C723C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592BC38D-E663-F75B-2490-9B2C28C723C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592BC38D-E663-F75B-2490-9B2C28C723C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592BC38D-E663-F75B-2490-9B2C28C723C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
