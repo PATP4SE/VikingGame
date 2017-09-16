@@ -5,7 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour {
 
 	[SerializeField] private int speed;
-	public int speed2;
+	[SerializeField] private GameObject enemy;
 	// Use this for initialization
 	void Start () {
 		
@@ -39,5 +39,12 @@ public class Move : MonoBehaviour {
 		{
 			this.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3 (0, speed, 0));
 		}
+
+		if (Input.GetKeyDown (KeyCode.E)) 
+		{
+			Instantiate (enemy);
+		}
+
+			
     }
 }
